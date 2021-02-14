@@ -1,0 +1,16 @@
+.service-card {
+  display: flex;
+  align-items: flex-start;
+  &__img {
+    height: 80px;
+    width: 80px;
+  }
+  &__text-wrapper {
+    margin-left: 10px;
+  }
+  &__title {
+    font-weight: bold;
+    font-size: 20px;
+    color: rgba(1,1,1,.6);
+  }
+}

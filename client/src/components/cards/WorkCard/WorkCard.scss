@@ -1,0 +1,44 @@
+.work-card {
+  margin-top: 60px;
+  padding: 0 10px;
+  z-index: 100012312;
+  &__num {
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    border: white 4px solid;
+    border-radius: 50%;
+    background-color: #F16821;
+    width: 64px;
+    height: 64px;
+  }
+  &__title {
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 20px;
+  }
+  &__desc {
+    margin-top: 15px;
+    color: rgba(255,255,255,.8);
+  }
+  &__list {
+    margin-top: 30px;
+    list-style: none;
+  }
+  &__list-item {
+    color: rgba(255,255,255,.8);
+    margin: 15px 0;
+    position: relative;
+    &:before {
+      position: absolute;
+      left: -35px;
+      content: '';
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+      background: url(gl.png);
+      background-size: contain;
+    }
+  }
+}

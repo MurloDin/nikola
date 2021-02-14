@@ -1,0 +1,11 @@
+.contact-section {
+  min-height: 100vh;
+  padding-top: 30px;
+  background-color: #F8F9FA;
+  &__title {
+    margin-top: 30px;
+    font-weight: bold;
+    font-size: 22px;
+    color: rgba(1,1,1,.7);
+  }
+}

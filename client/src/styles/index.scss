@@ -1,0 +1,76 @@
+@import url("./fonts.css");
+@import url("./bootstrap-grid.min.css");
+@import url("./bootstrap-reboot.min.css");
+
+
+body {
+    margin: 0;
+    font-family: Montserrat;
+    overflow-x: hidden;
+    padding:0;
+
+    /*Avoid flicker on slides transitions for mobile phones #336 */
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+.title {
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0px auto;
+    margin-top: 50px;
+    z-index: 10001230;
+    color: #F16821;
+    font-size: 38px;
+    font-weight: bold;
+    &:after {
+        content: "";
+        display: block;
+        margin: 10px auto;
+        width: 130px;
+        height: 3px;
+        background-color: #F16821;
+    }
+}
+
+.content-wrapper {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+
+button, button:active, button:focus {
+    outline: none !important;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.vertical-flex {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.icon {
+    margin-right: 15px;
+    border: rgba(1,1,1,.2) 1px solid;
+    border-radius: 50%;
+    padding: 10px;
+    background-color: rgba(1,1,1,0);
+    z-index: 10001;
+    font-size: 16px;
+    color: gray;
+    &:hover {
+        transition: .3s;
+        border-color: orange;
+        background-color: orange;
+        color: white;
+    }
+}
